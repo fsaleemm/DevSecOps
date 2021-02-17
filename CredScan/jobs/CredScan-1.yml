@@ -1,0 +1,50 @@
+parameters:
+  Pool: ''
+
+jobs:
+  - job: CredScanJob
+    pool:
+      vmImage: ${{ parameters.Pool }}
+    steps:
+    - task: CredScan@2
+      displayName: 'Run CredScan'
+      inputs:
+        toolMajorVersion: 'V2'
+        verboseOutput: true
+        batchSize: '20'
+
+
+    - task: SdtReport@1
+      displayName: 'Create Security Analysis Report'
+      inputs:
+        AllTools: false
+        BinSkim: false
+        CredScan: true
+        MSRD: false
+        RoslynAnalyzers: false
+        TSLint: false
+        ToolLogsNotFoundAction: 'Standard'
+
+    - task: PublishSecurityAnalysisLogs@2
+      displayName: 'Publish Security Analysis Logs'
+      inputs:
+        ArtifactName: 'CodeAnalysisLogs'
+        ArtifactType: 'Container'
+        AllTools: false
+        AntiMalware: false
+        BinSkim: false
+        CredScan: true
+        MSRD: false
+        RoslynAnalyzers: false
+        TSLint: false
+        ToolLogsNotFoundAction: 'Standard'
+
+    - task: PostAnalysis@1
+      displayName: 'Post Analysis'
+      inputs:
+        AllTools: false
+        BinSkim: false
+        CredScan: true
+        RoslynAnalyzers: false
+        TSLint: false
+        ToolLogsNotFoundAction: 'Standard'
