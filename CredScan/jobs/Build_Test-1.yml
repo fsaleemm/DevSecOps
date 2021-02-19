@@ -7,11 +7,11 @@ parameters:
 jobs:
   - job: Build_and_Test
     pool:
-      vmImage: 'windows-latest'
+      vmImage: ${{ parameters.Pool }}
 
     variables:
-      buildConfiguration: 'Release'
-      buildPlatform: 'any cpu'
+      buildConfiguration: ${{ parameters.buildConfiguration }}
+      buildPlatform: ${{ parameters.buildPlatform }}
 
     steps:
     - task: NuGetToolInstaller@0

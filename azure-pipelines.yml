@@ -8,3 +8,8 @@ jobs:
      Pool: 'windows-latest'
      buildConfiguration: 'Release'
      buildPlatform: 'any cpu'
+
+  #Run Credentail Scan Job
+  - template: CredScan/jobs/CredScan-1.yml
+    parameters:
+     Pool: 'windows-latest'
