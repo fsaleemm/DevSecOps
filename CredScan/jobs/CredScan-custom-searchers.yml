@@ -2,7 +2,7 @@ parameters:
   Pool: ''
 
 jobs:
-  - job: CredScanJob-with-custom-searchers
+  - job: CredScanJob_with_custom_searchers
     pool:
       vmImage: ${{ parameters.Pool }}
     steps:
