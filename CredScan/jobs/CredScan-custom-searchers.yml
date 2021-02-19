@@ -31,7 +31,7 @@ jobs:
     - task: PublishSecurityAnalysisLogs@2
       displayName: 'Publish Security Analysis Logs'
       inputs:
-        ArtifactName: 'CodeAnalysisLogs'
+        ArtifactName: 'CodeAnalysisLogs-custom'
         ArtifactType: 'Container'
         AllTools: false
         AntiMalware: false
