@@ -2,7 +2,7 @@
 
 
 trigger:
-- master
+- '*'
 
 jobs:
   #Run the Build and Test Job along with other scans
