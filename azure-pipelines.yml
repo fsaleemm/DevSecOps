@@ -13,3 +13,8 @@ jobs:
   - template: CredScan/jobs/CredScan-1.yml
     parameters:
      Pool: 'windows-latest'
+
+  #Run Credentail Scan Job with customer searchers
+  - template: CredScan/jobs/CredScan-custom-searchers.yml
+    parameters:
+     Pool: 'windows-latest'     
