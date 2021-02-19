@@ -1,5 +1,6 @@
 parameters:
   Pool: ''
+  searchersFile: ''
 
 jobs:
   - job: CredScanJob_with_custom_searchers
@@ -11,7 +12,7 @@ jobs:
       inputs:
         toolMajorVersion: 'V2'
         searchersFileType: 'DefaultAndCustom'
-        searchersFile: '../searchers/buildsearcher.xml'        
+        searchersFile: ${{ parameters.searchersFile }}
         verboseOutput: true
         batchSize: '20'
 

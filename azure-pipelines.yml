@@ -17,4 +17,5 @@ jobs:
   #Run Credentail Scan Job with customer searchers
   - template: CredScan/jobs/CredScan-custom-searchers.yml
     parameters:
-     Pool: 'windows-latest'     
+     Pool: 'windows-latest'
+     searchersFile: 'CredScan/searchers/buildsearcher.xml'     
