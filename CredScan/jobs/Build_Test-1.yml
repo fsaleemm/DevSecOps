@@ -22,7 +22,7 @@ jobs:
     - task: NuGetCommand@2
       displayName: 'NuGet restore'
       inputs:
-        restoreSolution: 'SomeConsoleApplication.sln'
+        restoreSolution: '**/SomeConsoleApplication.sln'
 
 
     - task: VSBuild@1
