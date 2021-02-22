@@ -1,0 +1,43 @@
+parameters:
+  Pool: ''
+  buildConfiguration: ''
+  buildPlatform: ''
+
+
+jobs:
+  - job: Build_and_Test
+    pool:
+      vmImage: ${{ parameters.Pool }}
+
+    variables:
+      buildConfiguration: ${{ parameters.buildConfiguration }}
+      buildPlatform: ${{ parameters.buildPlatform }}
+
+    steps:
+    - task: NuGetToolInstaller@0
+      displayName: 'Use NuGet 4.4.1'
+      inputs:
+        versionSpec: 4.4.1
+
+    - task: NuGetCommand@2
+      displayName: 'NuGet restore'
+      inputs:
+        restoreSolution: '**/SomeConsoleApplication.sln'
+
+
+    - task: VSBuild@1
+      displayName: 'Build solution **\*.sln'
+      inputs:
+        solution: '**/SomeConsoleApplication.sln'
+        platform: '$(BuildPlatform)'
+        configuration: '$(BuildConfiguration)'
+
+    - task: VSTest@2
+      displayName: 'VsTest - testAssemblies'
+      inputs:
+        testAssemblyVer2: |
+          **\$(BuildConfiguration)\*Test*.dll
+          !**\obj\**
+        codeCoverageEnabled: true
+        platform: '$(BuildPlatform)'
+        configuration: '$(BuildConfiguration)'
