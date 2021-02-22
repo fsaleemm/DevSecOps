@@ -14,25 +14,25 @@ The documentation here contains an example of using the [Microsoft Security Code
 1) In Azure DevOps, go to your Organization and respective project that you setup for credential scanning.
 2) Go to Pipelines, click on the pipeline created for credential scanning.
 
-![](https://github.com/fsaleemm/DevSecOps/blob/main/CredScan/images/ss1.png)
+![](https://github.com/fsaleemm/DevSecOps/blob/main/CredScan/images/ss1.PNG)
 
 3) From the list of runs, click on the recent run to get to the summary.
 4) In the Summary, click on the published artifacts.
 
-![](https://github.com/fsaleemm/DevSecOps/blob/main/CredScan/images/ss2.png)
+![](https://github.com/fsaleemm/DevSecOps/blob/main/CredScan/images/ss2.PNG)
 
 5) There will be 2 published directories:
     - CodeAnalysisLogs: This contains the output of the default Credential Scanning report.
     - CodeAnalysisLogs-custom: This contains the output of the custom Credential Scanning report.
 
-![](https://github.com/fsaleemm/DevSecOps/blob/main/CredScan/images/ss3.png)
+![](https://github.com/fsaleemm/DevSecOps/blob/main/CredScan/images/ss3.PNG)
 
 6) Expand CodeAnalysisLogs and view the SdtReport.html. It should look like below:
 
-![](https://github.com/fsaleemm/DevSecOps/blob/main/CredScan/images/ss4.png)
+![](https://github.com/fsaleemm/DevSecOps/blob/main/CredScan/images/ss4.PNG)
 
 7) Expand CodeAnalysisLogs-custom and view the SdtReport.html. It should look like below:
 
-![](https://github.com/fsaleemm/DevSecOps/blob/main/CredScan/images/ss5.png)
+![](https://github.com/fsaleemm/DevSecOps/blob/main/CredScan/images/ss5.PNG)
 
 The report with custom searchers should have detected any SSNs and Credit Card numbers in the source code in addition to the default issues.
