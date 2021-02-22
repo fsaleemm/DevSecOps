@@ -39,12 +39,13 @@ jobs:
         TSLint: false
         ToolLogsNotFoundAction: 'Standard'
 
-    - task: PostAnalysis@1
-      displayName: 'Post Analysis'
-      inputs:
-        AllTools: false
-        BinSkim: false
-        CredScan: true
-        RoslynAnalyzers: false
-        TSLint: false
-        ToolLogsNotFoundAction: 'Standard'
+    # Uncomment the below task to analyse the report and fail the build if issues are found.
+    #- task: PostAnalysis@1
+    #  displayName: 'Post Analysis'
+    #  inputs:
+    #    AllTools: false
+    #    BinSkim: false
+    #    CredScan: true
+    #    RoslynAnalyzers: false
+    #    TSLint: false
+    #    ToolLogsNotFoundAction: 'Standard'
