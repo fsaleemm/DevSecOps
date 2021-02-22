@@ -6,7 +6,7 @@ The documentation here contains an example of using the [Microsoft Security Code
 
 1) Install the Microsoft Security Code Analysis Extension by following instruction [here](https://docs.microsoft.com/en-us/azure/security/develop/security-code-analysis-onboard#onboarding-the-microsoft-security-code-analysis-extension).
 2) Setup GitHub integrations with Azure Pipelines by following instructions [here](https://www.azuredevopslabs.com/labs/vstsextend/github-azurepipelines/#task-1-installing-azure-pipelines-from-github-marketplace). Use this option if your code repository is GitHub.
-3) Configure Azure DevOps Pipeline for Continuous Integration following instructions [here](https://www.azuredevopslabs.com/labs/vstsextend/github-azurepipelines/#task-1-installing-azure-pipelines-from-github-marketplace). For step 4 use the YAML [here](https://github.com/fsaleemm/DevSecOps).
+3) Configure Azure DevOps Pipeline for Continuous Integration following instructions [here](https://www.azuredevopslabs.com/labs/vstsextend/github-azurepipelines/#task-2-configuring-a-continuous-integration-pipeline). For step 4 use the YAML [here](https://github.com/fsaleemm/DevSecOps/blob/main/azure-pipelines.yml).
 4) Run the Azure DevOps Pipeline and review the reports. See below for details.
 
 ## Review Published Reports
