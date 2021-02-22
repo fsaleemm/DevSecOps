@@ -2,7 +2,7 @@
 <ArrayOfContentSearcher xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ContentSearcher>
     <Name>Social Security Numbers</Name>
-    <RuleId>CSCAN0170</RuleId>
+    <RuleId>CSCAN-custom0170</RuleId>
     <ResourceMatchPattern>\.(cs|xml|config|json|ts|cfg|txt|ps1|bat|cscfg|publishsettings|cmd|psm1|aspx|asmx|vbs|added_cluster|clean|pubxml|ccf|ini|svd|sql|c|xslt|csv|FF|ExtendedTests|settings|cshtml|template|trd|argfile)$|(config|certificate|publish|UT)\.js$|(commands|user|tests)\.cpp$</ResourceMatchPattern>
     <ContentSearchPatterns>
       <string>(?!219-09-9999|078-05-1120)(?!666|000|9\d{2})\d{3}-(?!00)\d{2}-(?!0{4})\d{4}|(?!219099999|078051120)(?!666|000|9\d{2})\d{3}(?!00)\d{2}(?!0{4})\d{4}</string>
@@ -13,7 +13,7 @@
   </ContentSearcher>
     <ContentSearcher>
     <Name>Credit Card Numbers</Name>
-    <RuleId>CSCAN0180</RuleId>
+    <RuleId>CSCAN-custom0180</RuleId>
     <ResourceMatchPattern>\.(cs|xml|config|json|ts|cfg|txt|ps1|bat|cscfg|publishsettings|cmd|psm1|aspx|asmx|vbs|added_cluster|clean|pubxml|ccf|ini|svd|sql|c|xslt|csv|FF|ExtendedTests|settings|cshtml|template|trd|argfile)$|(config|certificate|publish|UT)\.js$|(commands|user|tests)\.cpp$</ResourceMatchPattern>
     <ContentSearchPatterns>
       <string>((67\d{2})|(4\d{3})|(5[1-5]\d{2})|(6011))(-?\s?\d{4}){3}|(3[4,7])\d{2}-?\s?\d{6}-?\s?\d{5}</string>
