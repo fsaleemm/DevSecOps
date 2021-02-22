@@ -14,25 +14,25 @@ The documentation here contains an example of using the [Microsoft Security Code
 1) In Azure DevOps, go to your Organization and respective project that you setup for credential scanning.
 2) Go to Pipelines, click on the pipeline created for credential scanning.
 
-![](images/ss1.png)
+![](/images/ss1.png)
 
 3) From the list of runs, click on the recent run to get to the summary.
 4) In the Summary, click on the published artifacts.
 
-![](images/ss2.png)
+![](/images/ss2.png)
 
 5) There will be 2 published directories:
     - CodeAnalysisLogs: This contains the output of the default Credential Scanning report.
     - CodeAnalysisLogs-custom: This contains the output of the custom Credential Scanning report.
 
-![](images/ss3.png)
+![](/images/ss3.png)
 
 6) Expand CodeAnalysisLogs and view the SdtReport.html. It should look like below:
 
-![](images/ss4.png)
+![](/images/ss4.png)
 
 7) Expand CodeAnalysisLogs-custom and view the SdtReport.html. It should look like below:
 
-![](images/ss5.png)
+![](/images/ss5.png)
 
 The report with custom searchers should have detected any SSNs and Credit Card numbers in the source code in addition to the default issues.
