@@ -20,6 +20,6 @@ jobs:
      Pool: 'windows-latest'
      searchersFile: 'CredScan/searchers/buildsearcher.xml'     
   
-  - template: jobs/CredScan-truffleHog-1.yml
+  - template: CredScan/jobs/CredScan-truffleHog-1.yml
     parameters:
       Pool: 'ubuntu-latest'   
