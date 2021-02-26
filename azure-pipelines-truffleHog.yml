@@ -10,6 +10,6 @@ jobs:
      buildPlatform: 'any cpu'
 
   #Run Credentail Scan Job
-  - template: jobs/CredScan-truffleHog-1.yml
+  - template: CredScan/jobs/CredScan-truffleHog-1.yml
     parameters:
       Pool: 'ubuntu-latest'    

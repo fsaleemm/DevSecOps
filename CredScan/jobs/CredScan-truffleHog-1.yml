@@ -10,5 +10,5 @@ jobs:
     - bash: |
         PATH="$PATH:$HOME/.local/bin"
         pip install truffleHog
-        trufflehog --regex --rules scan-rules/rules.json --branch main --entropy=False https://github.com/fsaleemm/DevSecOps.git
+        trufflehog --regex --rules CredScan/scan-rules/rules.json --branch main --entropy=False https://github.com/fsaleemm/DevSecOps.git
       displayName: 'Install truffleHog and Scan'

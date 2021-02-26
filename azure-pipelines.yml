@@ -20,6 +20,7 @@ jobs:
      Pool: 'windows-latest'
      searchersFile: 'CredScan/searchers/buildsearcher.xml'     
   
+  #Run truffleHog tool for credentail scanning
   - template: CredScan/jobs/CredScan-truffleHog-1.yml
     parameters:
       Pool: 'ubuntu-latest'   
