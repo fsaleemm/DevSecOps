@@ -1,0 +1,14 @@
+parameters:
+  Pool: ''
+
+jobs:
+  - job: CredScan_truffleHog_Job
+    displayName: 'Use truffleHog for Credential Scanning'
+    pool:
+      vmImage: ${{ parameters.Pool }}
+    steps:
+    - bash: |
+        PATH="$PATH:$HOME/.local/bin"
+        pip install truffleHog
+        trufflehog --regex --rules CredScan/scan-rules/rules.json --branch main --entropy=False https://github.com/fsaleemm/DevSecOps.git
+      displayName: 'Install truffleHog and Scan'
