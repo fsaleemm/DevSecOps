@@ -18,8 +18,4 @@ jobs:
   - template: CredScan/jobs/CredScan-custom-searchers.yml
     parameters:
      Pool: 'windows-latest'
-     searchersFile: 'CredScan/searchers/buildsearcher.xml'     
-  
-  - template: jobs/CredScan-truffleHog-1.yml
-    parameters:
-      Pool: 'ubuntu-latest'   
+     searchersFile: 'CredScan/searchers/buildsearcher.xml'    
