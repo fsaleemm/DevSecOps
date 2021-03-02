@@ -24,3 +24,8 @@ jobs:
   #- template: CredScan/jobs/CredScan-truffleHog-1.yml
   #  parameters:
   #    Pool: 'ubuntu-latest'   
+
+    #Run Credential digger Credentail Scan Job
+  - template: CredScan/jobs/CredScan-credential-digger-1.yml
+    parameters:
+      Pool: 'ubuntu-latest'    
