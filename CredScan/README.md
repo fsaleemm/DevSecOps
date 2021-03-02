@@ -1,7 +1,5 @@
 # Credential Scan
 
-![toc]
-
 ## Prerequisite Steps
 
 1) Setup GitHub integrations with Azure Pipelines by following instructions [here](https://www.azuredevopslabs.com/labs/vstsextend/github-azurepipelines/#task-1-installing-azure-pipelines-from-github-marketplace).
