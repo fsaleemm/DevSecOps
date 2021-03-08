@@ -1,8 +1,10 @@
 # DevSecOps
 
-Here are some examples of using Code Analysis Tools in your CI Azure DevOps pipeline.
+The DevSecOps topic is broad and 
 
+- [DevSecOps Concepts]()
 - [Credential Scanning](https://github.com/fsaleemm/DevSecOps/tree/main/CredScan#credentail-scan)
+- [Code Scanning - Placeholder]()
 
 ## Structure of the directory
 
