@@ -10,22 +10,22 @@ jobs:
      buildPlatform: 'any cpu'
 
   #Run Credentail Scan Job
-  - template: CredScan/jobs/CredScan-1.yml
-    parameters:
-     Pool: 'windows-latest'
+  #- template: CredScan/jobs/CredScan-1.yml
+  #  parameters:
+  #   Pool: 'windows-latest'
 
   #Run Credentail Scan Job with customer searchers
-  - template: CredScan/jobs/CredScan-custom-searchers.yml
-    parameters:
-     Pool: 'windows-latest'
-     searchersFile: 'CredScan/searchers/buildsearcher.xml'     
+  #- template: CredScan/jobs/CredScan-custom-searchers.yml
+  #  parameters:
+  #   Pool: 'windows-latest'
+  #   searchersFile: 'CredScan/searchers/buildsearcher.xml'     
   
   #Run truffleHog tool for credentail scanning. Commenting this out as no option exist to not fail when credentails are found in the code.
   #- template: CredScan/jobs/CredScan-truffleHog-1.yml
   #  parameters:
   #    Pool: 'ubuntu-latest'   
 
-    #Run Credential digger Credentail Scan Job
-  - template: CredScan/jobs/CredScan-credential-digger-1.yml
-    parameters:
-      Pool: 'ubuntu-latest'    
+  #Run Credential digger Credentail Scan Job
+  #- template: CredScan/jobs/CredScan-credential-digger-1.yml
+  #  parameters:
+  #    Pool: 'ubuntu-latest'    

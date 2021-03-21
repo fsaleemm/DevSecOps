@@ -12,7 +12,7 @@ The DevSecOps practices are built on the adoption of DevOps culture. To familiar
 
 ## DevSecOps Activities
 
-In the below diagram are listed some of the DevSecOps activities as related to the DevOps process. For readability, the DevOps stages are depicted in a flat flow, however in reality, the Monitor stage provides feedback into the Plan stage for new threats detected.
+The below diagram are lists some of the DevSecOps activities as related to the DevOps process. For readability, the DevOps stages are depicted in a flat flow, however in reality, the Monitor stage provides feedback into the Plan stage for new threats detected and the process continues as shown.
 
 ![DevSecOps Activities](images/ss1.PNG)
 
