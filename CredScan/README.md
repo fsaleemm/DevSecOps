@@ -82,3 +82,9 @@ The result of the Credential Digger are stored in the sqlite database or they ca
 The output can be to a CSV using sqlite [".mode csv"](https://www.w3resource.com/sqlite/sqlite-dot-commands.php#mode) dot-command and processed for creating a unified report.
 
 ![](https://github.com/fsaleemm/DevSecOps/blob/main/CredScan/images/ss9.PNG)
+
+## Other tools
+
+- [gittyleaks](https://github.com/kootenpv/gittyleaks)
+- [Git Hound](https://github.com/ezekg/git-hound)
+- [Repo Security Scanner](https://github.com/UKHomeOffice/repo-security-scanner)
