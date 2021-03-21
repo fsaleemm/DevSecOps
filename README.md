@@ -1,7 +1,5 @@
 # DevSecOps
 
-The DevSecOps topic is broad and 
-
 - [DevSecOps Concepts](/Concepts#devSecOps-concepts)
 - [Credential Scanning](/CredScan#credential-scan)
 
