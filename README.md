@@ -2,9 +2,8 @@
 
 The DevSecOps topic is broad and 
 
-- [DevSecOps Concepts](Concepts#devSecOps-concepts)
+- [DevSecOps Concepts](/Concepts#devSecOps-concepts)
 - [Credential Scanning](https://github.com/fsaleemm/DevSecOps/tree/main/CredScan#credentail-scan)
-- [Code Scanning - Placeholder]()
 
 ## Structure of the directory
 
